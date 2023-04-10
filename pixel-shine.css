@@ -1,0 +1,65 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+h1{
+    font-size: 2rem;
+    font-family: "poppins", sans-serif;
+  }
+  h4{
+    font-size: 1.2rem;
+    font-family: monospace, 'Courier New', Courier;
+}
+
+/*  */
+
+.card {
+  position: relative;
+  background-color: rgba(16, 16, 16, 0.2);
+  border: 1px solid rgb(255 255 255 / 5%);
+  border-radius: 1.5rem;
+  padding: 2rem;
+}
+.card:after {
+  content: "";
+  height: 70px;
+  width: 1px;
+
+  position: absolute;
+  left: -1px;
+
+  background: linear-gradient(
+    transparent,
+    mediumslateblue,
+    transparent
+    );
+
+  transition: top, opacity, ease 0.6s;
+}
+.card:after {
+  top: 65%;
+  opacity: 0;
+}
+.card:hover:after {
+  top: 25%;
+  opacity: 1;
+}
+.card-content {  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 4rem;
+  overflow: hidden;
+
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.1) 1px, 
+    transparent 1px
+  );
+  background-position: 50% 50%;
+  background-size: 1.1rem 1.1rem;
+}
