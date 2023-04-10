@@ -23,13 +23,17 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 /*  */
+:root {
+    --bg-color: rgb(20, 20, 20);
+    --card-color: rgb(23, 23, 23);
+  }
 body {
 	display: flex;
+	flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     color: white;
-
     background-color: black;
 	line-height: 1;
 }
